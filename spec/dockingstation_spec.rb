@@ -27,4 +27,11 @@ describe DockingStation do
   it 'has a default capacity' do
     expect(subject.capacity).to eq DockingStation::DEFAULT_CAPACITY
   end
+
+  describe '#initialize' do
+  it 'can change capacity' do
+    expect(DockingStation.new(10).capacity).to eq 10
+  end
+end
+
 end
