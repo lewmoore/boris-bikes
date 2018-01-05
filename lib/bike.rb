@@ -8,6 +8,10 @@ class Bike
 
   def working?(condition)
     @condition = condition
-    return condition
   end
+
+  def status?
+    @condition
+  end
+
 end
