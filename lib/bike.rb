@@ -1,5 +1,5 @@
 class Bike
-  def working?
-    true
+  def working?(condition=true)
+    condition
   end
 end
