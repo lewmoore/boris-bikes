@@ -5,7 +5,8 @@ describe Bike do
   it 'should report as broken' do
     expect(subject.working?(false)).to eq false
   end
-  it 'should default to true unless reported as broken' do
-    expect(subject.working?).to eq true
+
+  it 'bike working? defaults to true' do
+    expect(subject.working?(true)).to eq true
   end
 end
